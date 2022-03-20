@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    width: 300px;
+    border-radius: 16px;
+    background-color: #8b98a9;
+    padding: 10px;
+}
+
+input[type=text], select {
+    width: 80%;
+    padding: 10px;
+    margin: 30px;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: saddlebrown;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: 45a049;
+}
+
+
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #ffffff;
+    background-image: url("tatry.jpg") ;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+}
+
+nav {
+    flex: 1;
+    background: lightslategrey;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    background-color: #6b7b8f;
+    border: 1px solid #555;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+article {
+    flex: 3;
+    background-color: slategrey;
+
+}
+
+section::after {
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #6b7b8f;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+@media (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+}
